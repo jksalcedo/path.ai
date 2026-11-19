@@ -44,9 +44,9 @@ class PathAIController:
         for k, v in kwargs.items():
             if not hasattr(self._answers.preferences, k):
                 raise ValueError(f"Unknown preference: {k}")
-            if k == "budget_cap" and v:
-                v = int(v)
-            if k in ("budget_cap", "location") and not v:
+            if k in ("prefers_tuition_free", "willing_to_relocate", "scholarship_need"):
+                v = bool(v)
+            if k == "location" and not v:
                 v = None
             setattr(self._answers.preferences, k, v)
         self._persist()

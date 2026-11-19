@@ -38,9 +38,9 @@ class RuleBasedEngine(MatchingEngine):
                 continue
             base = self._fit(traits, p.trait_weights)
             bonus, badges = 0.0, []
-            if prefs.budget_cap is not None and any(h.est_annual_tuition_php <= prefs.budget_cap for h in offering):
+            if prefs.prefers_tuition_free and any(not h.requires_tuition for h in offering):
                 bonus += 0.05
-                badges.append("Within budget")
+                badges.append("Tuition-free option")
             if prefs.location and any(h.municipality == prefs.location for h in offering):
                 bonus += 0.05
                 badges.append("Preferred location")
