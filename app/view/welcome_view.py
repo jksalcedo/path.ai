@@ -3,15 +3,16 @@
 import flet as ft
 
 
-def build_welcome_view(
+async def build_welcome_view(
     page: ft.Page,
     controller,
     on_start_new,
     on_resume_intake,
     on_view_results,
+    on_home,
 ) -> ft.Container:
-    has_saved = controller.has_saved()
-    saved_results = controller.last_results()
+    has_saved = await controller.has_saved()
+    saved_results = await controller.last_results()
 
     controls: list[ft.Control] = [
         ft.Icon(ft.Icons.SCHOOL_ROUNDED, size=48, color=ft.Colors.BLUE_700),
@@ -34,7 +35,7 @@ def build_welcome_view(
                 padding=12,
                 border_radius=8,
                 bgcolor=ft.Colors.AMBER_50,
-                border=ft.border.all(1, ft.Colors.AMBER_300),
+                border=ft.Border.all(1, ft.Colors.AMBER_300),
                 content=ft.Row(
                     spacing=10,
                     controls=[
@@ -55,7 +56,7 @@ def build_welcome_view(
             padding=14,
             border_radius=10,
             bgcolor=ft.Colors.BLUE_50,
-            border=ft.border.all(1, ft.Colors.BLUE_200),
+            border=ft.Border.all(1, ft.Colors.BLUE_200),
             content=ft.Column(
                 spacing=6,
                 controls=[
@@ -79,11 +80,27 @@ def build_welcome_view(
 
     # --- Clear My Data Confirmation Dialog ---
     def confirm_clear_data(e):
-        def perform_clear(ev):
-            page.close(confirm_dialog)
-            controller.clear_my_data()
-            page.open(ft.SnackBar(ft.Text("All saved intake data and results have been cleared.")))
-            on_start_new(reset=False)
+        def close_confirm_dialog():
+            if hasattr(page, "pop_dialog"):
+                page.pop_dialog()
+            else:
+                confirm_dialog.open = False
+                page.update()
+
+        async def perform_clear(ev):
+            close_confirm_dialog()
+            await controller.clear_my_data()
+            snack_bar = ft.SnackBar(ft.Text("All saved intake data and results have been cleared."))
+            if hasattr(page, "show_dialog"):
+                page.show_dialog(snack_bar)
+            elif hasattr(page, "snack_bar"):
+                page.snack_bar = snack_bar
+                snack_bar.open = True
+                page.update()
+            else:
+                page.overlay.append(snack_bar)
+                page.update()
+            await on_home()
 
         confirm_dialog = ft.AlertDialog(
             modal=True,
@@ -92,8 +109,8 @@ def build_welcome_view(
                 "This will permanently delete your saved answers and recent program recommendations from this device."
             ),
             actions=[
-                ft.TextButton("Cancel", on_click=lambda ev: page.close(confirm_dialog)),
-                ft.ElevatedButton(
+                ft.TextButton("Cancel", on_click=lambda ev: close_confirm_dialog()),
+                ft.FilledButton(
                     "Delete Data",
                     bgcolor=ft.Colors.RED_600,
                     color=ft.Colors.WHITE,
@@ -102,18 +119,35 @@ def build_welcome_view(
             ],
             actions_alignment=ft.MainAxisAlignment.END,
         )
-        page.open(confirm_dialog)
+        if hasattr(page, "show_dialog"):
+            page.show_dialog(confirm_dialog)
+        else:
+            page.dialog = confirm_dialog
+            confirm_dialog.open = True
+            page.update()
 
     # --- Action Buttons ---
     action_buttons: list[ft.Control] = []
 
+    async def resume_intake(e):
+        await on_resume_intake()
+
+    async def view_results(e):
+        on_view_results(saved_results)
+
+    async def start_fresh(e):
+        await on_start_new(reset=True)
+
+    async def start_assessment(e):
+        await on_start_new(reset=False)
+
     if has_saved:
         action_buttons.append(
-            ft.ElevatedButton(
+            ft.FilledButton(
                 "Resume Saved Intake",
                 icon=ft.Icons.PLAY_ARROW_ROUNDED,
                 width=280,
-                on_click=lambda _: on_resume_intake(),
+                on_click=resume_intake,
             )
         )
         if saved_results:
@@ -122,7 +156,7 @@ def build_welcome_view(
                     "View Last Recommendations",
                     icon=ft.Icons.LIST_ALT_ROUNDED,
                     width=280,
-                    on_click=lambda _: on_view_results(saved_results),
+                    on_click=view_results,
                 )
             )
         action_buttons.append(
@@ -130,7 +164,7 @@ def build_welcome_view(
                 "Start Fresh Assessment",
                 icon=ft.Icons.REFRESH_ROUNDED,
                 width=280,
-                on_click=lambda _: on_start_new(reset=True),
+                on_click=start_fresh,
             )
         )
         action_buttons.append(
@@ -143,11 +177,11 @@ def build_welcome_view(
         )
     else:
         action_buttons.append(
-            ft.ElevatedButton(
+            ft.FilledButton(
                 "Start Assessment",
                 icon=ft.Icons.ARROW_FORWARD_ROUNDED,
                 width=280,
-                on_click=lambda _: on_start_new(reset=False),
+                on_click=start_assessment,
             )
         )
 

@@ -41,6 +41,10 @@ class RuleBasedEngine(MatchingEngine):
             if prefs.prefers_tuition_free and any(not h.requires_tuition for h in offering):
                 bonus += 0.05
                 badges.append("Tuition-free option")
+            if prefs.budget_cap == 0 and any(not h.requires_tuition for h in offering):
+                bonus += 0.05
+                if "Tuition-free option" not in badges:
+                    badges.append("Tuition-free option")
             if prefs.location and any(h.municipality == prefs.location for h in offering):
                 bonus += 0.05
                 badges.append("Preferred location")
