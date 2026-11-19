@@ -151,4 +151,4 @@ def build_results_view(
             spacing=14,
             controls=controls,
         ),
-    )\
+    )
