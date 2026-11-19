@@ -13,11 +13,15 @@ from app.model.storage_repository import LocalStorageRepository, StorageBackend
 class PathAIController:
     def __init__(self, storage_backend: StorageBackend, data_dir: Optional[str] = None):
         self._storage = LocalStorageRepository(storage_backend)
-        self.auto_purged = self._storage.purge_if_expired()   # purge BEFORE loading
         self._dataset = DatasetRepository(data_dir)
         self._engine: MatchingEngine = RuleBasedEngine(self._dataset)
-        self._answers = self._storage.load_answers() or IntakeAnswers()
-        self._storage.touch()
+        self.auto_purged = False
+        self._answers = IntakeAnswers()
+
+    async def initialize(self) -> None:
+        self.auto_purged = await self._storage.purge_if_expired()
+        self._answers = await self._storage.load_answers() or IntakeAnswers()
+        await self._storage.touch()
 
     # queries
     def trait_catalog(self) -> List[dict]:
@@ -26,53 +30,55 @@ class PathAIController:
     def locations(self) -> List[str]:
         return self._dataset.locations()
 
-    def has_saved(self) -> bool:
-        return self._storage.has_saved()
+    async def has_saved(self) -> bool:
+        return await self._storage.has_saved()
 
     def answers(self) -> dict:
         return self._answers.to_dict()
 
-    def last_results(self) -> List[dict]:
-        return self._storage.load_results()
+    async def last_results(self) -> List[dict]:
+        return await self._storage.load_results()
 
     # commands (each persists immediately)
-    def set_trait(self, key: str, value: int) -> None:
+    async def set_trait(self, key: str, value: int) -> None:
         self._answers.traits.set(key, value)
-        self._persist()
+        await self._persist()
 
-    def set_preferences(self, **kwargs) -> None:
+    async def set_preferences(self, **kwargs) -> None:
         for k, v in kwargs.items():
             if not hasattr(self._answers.preferences, k):
                 raise ValueError(f"Unknown preference: {k}")
             if k in ("prefers_tuition_free", "willing_to_relocate", "scholarship_need"):
                 v = bool(v)
+            if k == "budget_cap":
+                v = None if v is None else int(v)
             if k == "location" and not v:
                 v = None
             setattr(self._answers.preferences, k, v)
-        self._persist()
+        await self._persist()
 
-    def set_profile(self, **kwargs) -> None:
+    async def set_profile(self, **kwargs) -> None:
         for k, v in kwargs.items():
             if not hasattr(self._answers.profile, k):
                 raise ValueError(f"Unknown profile field: {k}")
             setattr(self._answers.profile, k, v or None)
-        self._persist()
+        await self._persist()
 
-    def set_step(self, step: int) -> None:
+    async def set_step(self, step: int) -> None:
         self._answers.step = max(1, min(2, int(step)))
-        self._persist()
+        await self._persist()
 
-    def submit(self) -> List[dict]:
+    async def submit(self) -> List[dict]:
         # Privacy by construction: only traits + preferences reach the engine.
         recs = self._engine.recommend(self._answers.traits, self._answers.preferences)
         payloads = [r.payload() for r in recs]
-        self._storage.save_results(payloads)
-        self._persist()
+        await self._storage.save_results(payloads)
+        await self._persist()
         return payloads
 
-    def clear_my_data(self) -> None:
-        self._storage.clear()
+    async def clear_my_data(self) -> None:
+        await self._storage.clear()
         self._answers = IntakeAnswers()
 
-    def _persist(self) -> None:
-        self._storage.save_answers(self._answers)
+    async def _persist(self) -> None:
+        await self._storage.save_answers(self._answers)

@@ -1,18 +1,30 @@
-"""Flet client_storage adapter implementing the Model's StorageBackend protocol."""
+"""Flet persistent-storage adapter implementing the model storage protocol."""
+
+import inspect
 
 
 class FletStorageAdapter:
     def __init__(self, page):
-        self._s = page.client_storage
+        self._s = getattr(page, "client_storage", None)
+        if self._s is None:
+            import flet as ft
 
-    def get(self, key):
-        return self._s.get(key)
+            self._s = ft.SharedPreferences()
 
-    def set(self, key, value):
-        self._s.set(key, value)
+    async def get(self, key):
+        value = self._s.get(key)
+        return await value if inspect.isawaitable(value) else value
 
-    def remove(self, key):
-        self._s.remove(key)
+    async def set(self, key, value):
+        result = self._s.set(key, value)
+        if inspect.isawaitable(result):
+            await result
 
-    def keys(self, prefix):
-        return self._s.get_keys(prefix)
+    async def remove(self, key):
+        result = self._s.remove(key)
+        if inspect.isawaitable(result):
+            await result
+
+    async def keys(self, prefix):
+        keys = self._s.get_keys(prefix)
+        return await keys if inspect.isawaitable(keys) else keys
