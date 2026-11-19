@@ -111,7 +111,7 @@ def build_intake_view(page: ft.Page, controller, on_results_ready, on_home) -> f
                 ft.dropdown.Option("30000", "Up to ₱30,000 per year"),
                 ft.dropdown.Option("50000", "Up to ₱50,000 per year"),
             ],
-            on_change=lambda e: controller.set_preferences(budget_cap=budget_map[e.control.value]),
+            on_text_change=lambda e: controller.set_preferences(budget_cap=budget_map[e.control.value]),
         )
 
         available_locations = ["Any"] + list(controller.locations())
@@ -123,7 +123,7 @@ def build_intake_view(page: ft.Page, controller, on_results_ready, on_home) -> f
             label="Preferred Municipality / City in Camarines Sur",
             value=cur_loc,
             options=[ft.dropdown.Option(loc) for loc in available_locations],
-            on_change=lambda e: controller.set_preferences(
+            on_text_change=lambda e: controller.set_preferences(
                 location=None if e.control.value == "Any" else e.control.value
             ),
         )
@@ -156,7 +156,7 @@ def build_intake_view(page: ft.Page, controller, on_results_ready, on_home) -> f
                 ft.dropdown.Option("Arts & Design / Sports"),
                 ft.dropdown.Option("Prefer not to say"),
             ],
-            on_change=lambda e: controller.set_profile(
+            on_text_change=lambda e: controller.set_profile(
                 strand=None if e.control.value == "Prefer not to say" else e.control.value
             ),
         )
@@ -172,7 +172,7 @@ def build_intake_view(page: ft.Page, controller, on_results_ready, on_home) -> f
                 ft.dropdown.Option("75-79"),
                 ft.dropdown.Option("Prefer not to say"),
             ],
-            on_change=lambda e: controller.set_profile(
+            on_text_change=lambda e: controller.set_profile(
                 grade_band=None if e.control.value == "Prefer not to say" else e.control.value
             ),
         )
@@ -186,7 +186,7 @@ def build_intake_view(page: ft.Page, controller, on_results_ready, on_home) -> f
                 ft.dropdown.Option("Non-binary / Other"),
                 ft.dropdown.Option("Prefer not to say"),
             ],
-            on_change=lambda e: controller.set_profile(
+            on_text_change=lambda e: controller.set_profile(
                 gender=None if e.control.value == "Prefer not to say" else e.control.value
             ),
         )
