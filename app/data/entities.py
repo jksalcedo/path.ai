@@ -1,4 +1,4 @@
-"""Domain entities for Path.AI (Model layer)
+"""Domain entities for Path.AI (Model layer)"""
 
 from dataclasses import asdict, dataclass, field
 from typing import Dict, List, Optional, Tuple
@@ -6,10 +6,10 @@ from typing import Dict, List, Optional, Tuple
 TRAIT_KEYS = ("analytical", "creative", "technical", "people", "organizational", "entrepreneurial")
 
 TRAIT_INFO = {
-    "analytical":      ("Analytical", "Logic, numbers, and problem-solving"),
+    "analytical":      ("Analytical", "Logic, numbers, data, and problem-solving"),
     "creative":        ("Creative", "Design, writing, and original ideas"),
-    "technical":       ("Technical", "Computers, tools, and building systems"),
-    "people":          ("People-oriented", "Helping, teaching, and teamwork"),
+    "technical":       ("Technical", "Computers, lab/field tools, and hands-on systems"),
+    "people":          ("People-oriented", "Helping, caring, teaching, and teamwork"),
     "organizational":  ("Organizational", "Planning, detail, and order"),
     "entrepreneurial": ("Entrepreneurial", "Business, selling, and leading ventures"),
 }
