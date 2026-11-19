@@ -21,7 +21,7 @@ class HEI:
     name: str
     municipality: str
     type: str
-    est_annual_tuition_php: int
+    requires_tuition: bool
     scholarships: bool
     tuition_note: str
 
@@ -47,7 +47,7 @@ class TraitProfile:
 @dataclass
 class Preferences:
     """Model-adjacent preferences only (soft boosts in the engine)."""
-    budget_cap: Optional[int] = None
+    prefers_tuition_free: bool = False
     location: Optional[str] = None
     willing_to_relocate: bool = False
     scholarship_need: bool = False

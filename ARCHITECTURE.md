@@ -84,7 +84,7 @@ controller = PathAIController(FletStorageAdapter(page))
 | `answers()` | — | `dict` (shape below) | Re-rendering a resumed intake |
 | `last_results()` | — | `list[payload]` | Showing saved results on resume |
 | `set_trait(key, value)` | trait key, int 1–5 | — | A slider changes |
-| `set_preferences(**kw)` | `budget_cap`, `location`, `willing_to_relocate`, `scholarship_need` | — | A Layer 2 preference control changes |
+| `set_preferences(**kw)` | `prefers_tuition_free`, `location`, `willing_to_relocate`, `scholarship_need` | — | A Layer 2 preference control changes |
 | `set_profile(**kw)` | `strand`, `grade_band`, `gender` | — | Optional profile fields change |
 | `set_step(n)` | `1` or `2` | — | Next / Back between intake layers |
 | `submit()` | — | `list[payload]` (top 3) | "Get recommendations" pressed |
@@ -96,7 +96,7 @@ Every `set_*` call **persists immediately** — the View does not manage saving.
 ```json
 {
   "traits": {"values": {"analytical": 3, "technical": 5, "...": 3}},
-  "preferences": {"budget_cap": 20000, "location": "Nabua",
+  "preferences": {"prefers_tuition_free": true, "location": "Nabua",
                   "willing_to_relocate": false, "scholarship_need": true},
   "profile": {"strand": "STEM", "grade_band": "85-89", "gender": "Prefer not to say"},
   "step": 2
