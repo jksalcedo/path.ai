@@ -78,6 +78,28 @@ async def build_welcome_view(
         )
     )
 
+    # --- Prototype / Unverified Data Disclaimer (§11.7) ---
+    controls.append(
+        ft.Container(
+            padding=10,
+            border_radius=8,
+            bgcolor=ft.Colors.GREY_100,
+            border=ft.Border.all(1, ft.Colors.GREY_300),
+            content=ft.Row(
+                spacing=8,
+                controls=[
+                    ft.Icon(ft.Icons.SCIENCE_OUTLINED, size=18, color=ft.Colors.BLUE_GREY_700),
+                    ft.Text(
+                        "Prototype notice: Covers 12 Camarines Sur HEIs and 87 programs using draft rubric weights pending expert validation.",
+                        size=11,
+                        color=ft.Colors.BLUE_GREY_800,
+                        expand=True,
+                    ),
+                ],
+            ),
+        )
+    )
+
     # --- Clear My Data Confirmation Dialog ---
     def confirm_clear_data(e):
         def close_confirm_dialog():
@@ -129,10 +151,10 @@ async def build_welcome_view(
     # --- Action Buttons ---
     action_buttons: list[ft.Control] = []
 
-    async def resume_intake(e):
-        await on_resume_intake()
+    def resume_intake(e):
+        on_resume_intake()
 
-    async def view_results(e):
+    def view_results(e):
         on_view_results(saved_results)
 
     async def start_fresh(e):

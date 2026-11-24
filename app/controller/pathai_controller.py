@@ -43,15 +43,15 @@ class PathAIController:
         return [{"key": s.id, "label": s.label, "hint": s.hint, "college_id": s.college_id}
                 for s in self._dataset.skills_for(ids)]
 
-    def set_skill(self, key: str, value: int) -> None:
+    async def set_skill(self, key: str, value: int) -> None:
         if key not in {s.id for s in self._dataset.skills()}:
             raise ValueError(f"Unknown skill: {key}")
         self._answers.skills.set(key, value)
-        self._persist()
+        await self._persist()
 
-    def set_step(self, step: int) -> None:
+    async def set_step(self, step: int) -> None:
         self._answers.step = max(1, min(3, int(step)))
-        self._persist()
+        await self._persist()
 
     def locations(self) -> List[str]:
         return self._dataset.locations()
@@ -94,7 +94,6 @@ class PathAIController:
         self._answers.step = max(1, min(2, int(step)))
         await self._persist()
 
-<<<<<<<<< Temporary merge branch 1
     async def submit(self) -> List[dict]:
         # Privacy by construction: only traits + preferences reach the engine.
         recs = self._engine.recommend(self._answers.traits, self._answers.preferences)
