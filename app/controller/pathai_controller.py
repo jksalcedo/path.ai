@@ -94,7 +94,8 @@ class PathAIController:
         self._answers.step = max(1, min(2, int(step)))
         await self._persist()
 
-    def submit(self) -> List[dict]:
+<<<<<<<<< Temporary merge branch 1
+    async def submit(self) -> List[dict]:
         # Privacy by construction: only traits + preferences reach the engine.
         recs = self._engine.recommend(self._answers.traits, self._answers.preferences)
         payloads = [r.payload() for r in recs]
