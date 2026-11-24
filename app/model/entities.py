@@ -86,6 +86,7 @@ class SkillProfile:
 class Preferences:
     """Layer 1, model-adjacent only (soft boosts in the engine)."""
     prefers_tuition_free: bool = False
+    budget_cap: Optional[int] = None
     location: Optional[str] = None
     willing_to_relocate: bool = False
     scholarship_need: bool = False

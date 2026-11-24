@@ -18,6 +18,12 @@ def build_results_view(
         ),
     ]
 
+    def edit_answers(e):
+        on_edit_answers()
+
+    async def go_home(e):
+        await on_home()
+
     if not results:
         controls.append(
             ft.Container(
@@ -58,7 +64,7 @@ def build_results_view(
                             padding=8,
                             border_radius=6,
                             bgcolor=ft.Colors.GREY_50,
-                            border=ft.border.all(1, ft.Colors.GREY_200),
+                            border=ft.Border.all(1, ft.Colors.GREY_200),
                             content=ft.Column(
                                 spacing=2,
                                 controls=[
@@ -97,7 +103,7 @@ def build_results_view(
                                 expand=True,
                             ),
                             ft.Container(
-                                padding=ft.padding.symmetric(horizontal=10, vertical=4),
+                                padding=ft.Padding.symmetric(horizontal=10, vertical=4),
                                 border_radius=12,
                                 bgcolor=ft.Colors.BLUE_700,
                                 content=ft.Text(
@@ -137,8 +143,8 @@ def build_results_view(
         ft.Row(
             alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
             controls=[
-                ft.OutlinedButton("Edit Answers", icon=ft.Icons.EDIT_OUTLINED, on_click=lambda _: on_edit_answers()),
-                ft.ElevatedButton("Done / Home", icon=ft.Icons.HOME_OUTLINED, on_click=lambda _: on_home()),
+                ft.OutlinedButton("Edit Answers", icon=ft.Icons.EDIT_OUTLINED, on_click=edit_answers),
+                ft.FilledButton("Done / Home", icon=ft.Icons.HOME_OUTLINED, on_click=go_home),
             ],
         )
     )
