@@ -27,6 +27,32 @@ class PathAIController:
     def trait_catalog(self) -> List[dict]:
         return [{"key": k, "label": l, "hint": h} for k, (l, h) in TRAIT_INFO.items()]
 
+    def college_catalog(self) -> List[dict]:
+        return [{"id": c.id, "name": c.name} for c in self._dataset.colleges()]
+
+    def top_colleges(self, k: int = 2) -> List[dict]:
+        ranked = sorted(self._dataset.colleges(),
+                    key=lambda c: RuleBasedEngine._fit(self._answers.traits.values, c.trait_weights),
+                    reverse=True)[:k]
+        return [{"id": c.id, "name": c.name,
+                    "fit_pct": round(RuleBasedEngine._fit(self._answers.traits.values, c.trait_weights) * 100)}
+                for c in ranked]
+
+    def skill_catalog(self, college_ids: Optional[List[str]] = None) -> List[dict]:
+        ids = college_ids or [c["id"] for c in self.top_colleges()]
+        return [{"key": s.id, "label": s.label, "hint": s.hint, "college_id": s.college_id}
+                for s in self._dataset.skills_for(ids)]
+
+    def set_skill(self, key: str, value: int) -> None:
+        if key not in {s.id for s in self._dataset.skills()}:
+            raise ValueError(f"Unknown skill: {key}")
+        self._answers.skills.set(key, value)
+        self._persist()
+
+    def set_step(self, step: int) -> None:
+        self._answers.step = max(1, min(3, int(step)))
+        self._persist()
+
     def locations(self) -> List[str]:
         return self._dataset.locations()
 
@@ -68,7 +94,7 @@ class PathAIController:
         self._answers.step = max(1, min(2, int(step)))
         await self._persist()
 
-    async def submit(self) -> List[dict]:
+    def submit(self) -> List[dict]:
         # Privacy by construction: only traits + preferences reach the engine.
         recs = self._engine.recommend(self._answers.traits, self._answers.preferences)
         payloads = [r.payload() for r in recs]

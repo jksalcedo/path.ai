@@ -1,0 +1,74 @@
+{
+  "status": "Layer 3 skill catalog. Each skill belongs to one cluster and discriminates programs within it. Ordered most-discriminating first per cluster. Weights DRAFT - requires expert labeling.",
+  "skills": [
+    {"id": "sk_algorithm", "college_id": "computing", "label": "Logic & algorithms", "hint": "I enjoy solving logic puzzles and designing step-by-step solutions"},
+    {"id": "sk_code", "college_id": "computing", "label": "Coding & debugging", "hint": "I like writing, testing, and fixing code"},
+    {"id": "sk_infra", "college_id": "computing", "label": "Devices & networks", "hint": "I like setting up devices, networks, and troubleshooting systems"},
+    {"id": "sk_records", "college_id": "computing", "label": "Records & databases", "hint": "I enjoy organizing databases, records, and information systems"},
+    {"id": "sk_visual", "college_id": "computing", "label": "Digital visuals", "hint": "I enjoy creating digital art, animation, or visual media"},
+
+    {"id": "sk_circuits", "college_id": "engineering", "label": "Circuits & electronics", "hint": "I like working with circuits, wiring, and electronic components"},
+    {"id": "sk_structures", "college_id": "engineering", "label": "Structures & construction", "hint": "I'm interested in how buildings, bridges, and structures are designed and built"},
+    {"id": "sk_machines", "college_id": "engineering", "label": "Machines & engines", "hint": "I like understanding, assembling, or improving machines and engines"},
+    {"id": "sk_spatial", "college_id": "engineering", "label": "Spatial design", "hint": "I enjoy sketching spaces and planning how a room or building looks and feels"},
+    {"id": "sk_survey", "college_id": "engineering", "label": "Measurement & surveying", "hint": "I like precise measuring, mapping land, and working with survey instruments"},
+
+    {"id": "sk_hands_on", "college_id": "trades", "label": "Hands-on repair", "hint": "I learn best by taking things apart, repairing, and reassembling them"},
+    {"id": "sk_vehicle", "college_id": "trades", "label": "Vehicles & engines", "hint": "I'm interested in cars, engines, and vehicle maintenance"},
+    {"id": "sk_techdraw", "college_id": "trades", "label": "Technical drawing", "hint": "I enjoy reading or making technical plans, blueprints, and fabrication drawings"},
+
+    {"id": "sk_patientcare", "college_id": "health", "label": "Direct patient care", "hint": "I'm comfortable caring for patients and attending to their needs hands-on"},
+    {"id": "sk_lab", "college_id": "health", "label": "Laboratory analysis", "hint": "I enjoy examining specimens and running laboratory tests"},
+    {"id": "sk_rehab", "college_id": "health", "label": "Rehabilitation & movement", "hint": "I'm interested in helping people recover movement and physical function"},
+    {"id": "sk_imaging", "college_id": "health", "label": "Medical imaging", "hint": "I'm interested in operating X-ray, ultrasound, or therapy equipment"},
+    {"id": "sk_meds", "college_id": "health", "label": "Medicines & dispensing", "hint": "I'm interested in how medicines work, are prepared, and are dispensed"},
+    {"id": "sk_nutrition", "college_id": "health", "label": "Diet & nutrition", "hint": "I'm interested in food, diet planning, and community nutrition"},
+
+    {"id": "sk_labscience", "college_id": "sciences", "label": "Laboratory experiments", "hint": "I enjoy conducting experiments and studying samples under controlled conditions"},
+    {"id": "sk_fieldwork", "college_id": "sciences", "label": "Fieldwork & sampling", "hint": "I like working outdoors collecting samples and observing nature directly"},
+    {"id": "sk_modeling", "college_id": "sciences", "label": "Mathematical modeling", "hint": "I enjoy equations, proofs, and using math to model real problems"},
+    {"id": "sk_policyplan", "college_id": "sciences", "label": "Environmental planning", "hint": "I'm interested in environmental rules, land-use plans, and resource management"},
+    {"id": "sk_foodprocess", "college_id": "sciences", "label": "Food processing & safety", "hint": "I'm interested in how food is processed, preserved, and kept safe"},
+
+    {"id": "sk_crop", "college_id": "agriculture", "label": "Crops & farm management", "hint": "I'm interested in growing crops and running farm operations"},
+    {"id": "sk_aqua", "college_id": "agriculture", "label": "Fisheries & aquaculture", "hint": "I'm interested in fish farming, fishing, and aquatic resources"},
+    {"id": "sk_landuse", "college_id": "agriculture", "label": "Soil, trees & conservation", "hint": "I'm interested in soil health, tree planting, and land conservation"},
+
+    {"id": "sk_ledger", "college_id": "business", "label": "Bookkeeping & reporting", "hint": "I enjoy recording transactions and preparing financial reports"},
+    {"id": "sk_audit", "college_id": "business", "label": "Auditing & compliance", "hint": "I like checking records for accuracy and making sure rules are followed"},
+    {"id": "sk_venture", "college_id": "business", "label": "Starting a business", "hint": "I'm interested in building a business, selling, and managing a team"},
+    {"id": "sk_econdata", "college_id": "business", "label": "Market & economic data", "hint": "I enjoy analyzing prices, markets, and economic trends"},
+    {"id": "sk_officeops", "college_id": "business", "label": "Office systems & records", "hint": "I like organizing files, schedules, and office workflows"},
+
+    {"id": "sk_guestservice", "college_id": "hospitality", "label": "Guest service", "hint": "I enjoy welcoming guests and making sure customers are happy"},
+    {"id": "sk_foodservice", "college_id": "hospitality", "label": "Food & restaurant ops", "hint": "I'm interested in food preparation, kitchens, and restaurant operations"},
+    {"id": "sk_travelops", "college_id": "hospitality", "label": "Travel, tours & events", "hint": "I enjoy planning trips, tours, and events for other people"},
+
+    {"id": "sk_teaching", "college_id": "education", "label": "Teaching & class management", "hint": "I enjoy explaining lessons and managing a class"},
+    {"id": "sk_youngchild", "college_id": "education", "label": "Caring for young children", "hint": "I'm patient and comfortable guiding very young children"},
+    {"id": "sk_inclusive", "college_id": "education", "label": "Supporting special needs", "hint": "I want to help learners who need extra support or accommodation"},
+    {"id": "sk_coaching", "college_id": "education", "label": "Sports & physical coaching", "hint": "I enjoy sports, fitness, and coaching physical activity"},
+    {"id": "sk_techvoc", "college_id": "education", "label": "Teaching hands-on trades", "hint": "I'd like to teach practical trade or technical skills to others"},
+    {"id": "sk_artsed", "college_id": "education", "label": "Teaching arts & culture", "hint": "I enjoy teaching music, arts, and cultural subjects"},
+
+    {"id": "sk_writing", "college_id": "artscomm", "label": "Writing & editing", "hint": "I enjoy writing and editing stories, articles, or scripts"},
+    {"id": "sk_media", "college_id": "artscomm", "label": "Media production", "hint": "I like producing video, audio, or on-air content"},
+    {"id": "sk_language", "college_id": "artscomm", "label": "Language & literature", "hint": "I enjoy analyzing language, texts, and literature closely"},
+    {"id": "sk_reasoning", "college_id": "artscomm", "label": "Ethics & argumentation", "hint": "I enjoy debating ideas, ethics, and careful reasoning"},
+    {"id": "sk_communitymedia", "college_id": "artscomm", "label": "Community messaging", "hint": "I'm interested in using communication for community outreach and development"},
+    {"id": "sk_performance", "college_id": "artscomm", "label": "Musical performance", "hint": "I enjoy performing, composing, or practicing music"},
+
+    {"id": "sk_counseling", "college_id": "social", "label": "Counseling & support", "hint": "I'm comfortable listening to people and helping them through problems"},
+    {"id": "sk_casecare", "college_id": "social", "label": "Case management", "hint": "I like organizing help and services for individuals or families"},
+    {"id": "sk_governance", "college_id": "social", "label": "Government & policy", "hint": "I'm interested in government processes, laws, and public policy"},
+    {"id": "sk_research", "college_id": "social", "label": "Social research", "hint": "I enjoy surveys and studying data about people and society"},
+    {"id": "sk_communityorg", "college_id": "social", "label": "Community organizing", "hint": "I like mobilizing people and advocating for community causes"},
+
+    {"id": "sk_lawenforce", "college_id": "safety", "label": "Law enforcement", "hint": "I'm interested in police work, public safety, and legal procedures"},
+    {"id": "sk_forensic", "college_id": "safety", "label": "Forensic evidence", "hint": "I enjoy analyzing physical evidence and laboratory findings"},
+    {"id": "sk_securityops", "college_id": "safety", "label": "Security & risk", "hint": "I'm interested in security systems, risk assessment, and loss prevention"},
+
+    {"id": "sk_navigation", "college_id": "maritime", "label": "Navigation & seamanship", "hint": "I'm interested in ship navigation, charts, and life at sea"},
+    {"id": "sk_marineengines", "college_id": "maritime", "label": "Marine engines", "hint": "I'm interested in ship engines, power systems, and machinery at sea"}
+  ]
+}
