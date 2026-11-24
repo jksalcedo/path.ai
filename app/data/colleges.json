@@ -1,0 +1,18 @@
+{
+  "status": "Normalized cross-HEI academic clusters (Layer 2 targets), derived from the per-HEI college groupings in path.ai-1.pdf. trait_weights (0-3) DRAFT from the CHED rubric - requires expert labeling.",
+  "colleges": [
+    {"id": "computing", "name": "Computing & Information Technology", "trait_weights": {"analytical": 3, "technical": 3, "organizational": 2, "creative": 1}},
+    {"id": "engineering", "name": "Engineering & Architecture", "trait_weights": {"analytical": 3, "technical": 3, "organizational": 2, "creative": 1}},
+    {"id": "trades", "name": "Trades & Industrial Technology", "trait_weights": {"technical": 3, "organizational": 2, "analytical": 1, "creative": 1}},
+    {"id": "health", "name": "Health & Allied Health Sciences", "trait_weights": {"people": 3, "technical": 2, "organizational": 2, "analytical": 2}},
+    {"id": "sciences", "name": "Natural & Environmental Sciences", "trait_weights": {"analytical": 3, "technical": 2, "organizational": 1}},
+    {"id": "agriculture", "name": "Agriculture, Fisheries & Agroforestry", "trait_weights": {"technical": 3, "analytical": 2, "entrepreneurial": 1, "organizational": 1}},
+    {"id": "business", "name": "Business, Accountancy & Management", "trait_weights": {"entrepreneurial": 3, "organizational": 3, "analytical": 2, "people": 1}},
+    {"id": "hospitality", "name": "Hospitality & Tourism", "trait_weights": {"people": 3, "entrepreneurial": 2, "organizational": 2, "creative": 1}},
+    {"id": "education", "name": "Education & Teacher Development", "trait_weights": {"people": 3, "creative": 2, "organizational": 2}},
+    {"id": "artscomm", "name": "Arts, Humanities & Communication", "trait_weights": {"creative": 3, "people": 2, "entrepreneurial": 1}},
+    {"id": "social", "name": "Social Sciences & Public Service", "trait_weights": {"people": 3, "organizational": 2, "analytical": 1}},
+    {"id": "safety", "name": "Criminal Justice & Public Safety", "trait_weights": {"organizational": 3, "people": 2, "technical": 2, "analytical": 2}},
+    {"id": "maritime", "name": "Maritime Studies", "trait_weights": {"technical": 3, "organizational": 3, "analytical": 2, "people": 1}}
+  ]
+}
