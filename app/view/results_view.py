@@ -12,9 +12,27 @@ def build_results_view(
     controls: list[ft.Control] = [
         ft.Text("Top Recommended Programs", size=20, weight=ft.FontWeight.BOLD),
         ft.Text(
-            "Ranked by your trait alignment and Camarines Sur school preferences.",
+            "Ranked by your academic field fit, program skills, and Camarines Sur preferences.",
             size=12,
             color=ft.Colors.GREY_700,
+        ),
+        ft.Container(
+            padding=10,
+            border_radius=8,
+            bgcolor=ft.Colors.AMBER_50,
+            border=ft.Border.all(1, ft.Colors.AMBER_300),
+            content=ft.Row(
+                spacing=8,
+                controls=[
+                    ft.Icon(ft.Icons.SCIENCE_OUTLINED, size=18, color=ft.Colors.AMBER_800),
+                    ft.Text(
+                        "Prototype notice: Program weights use draft rubric data pending expert validation.",
+                        size=11,
+                        color=ft.Colors.AMBER_900,
+                        expand=True,
+                    ),
+                ],
+            ),
         ),
     ]
 
@@ -36,10 +54,18 @@ def build_results_view(
     else:
         for idx, item in enumerate(results, start=1):
             program = item.get("program", {})
+            college = item.get("college", {})
             match_pct = int(item.get("match_pct", 0))
+            fit_basis = item.get("fit_basis", "traits")
             badges = item.get("badges", [])
             rationale = item.get("rationale", "")
             heis = item.get("heis", [])
+
+            basis_caption = (
+                "Based on your skills"
+                if fit_basis == "skills"
+                else "Based on your interests"
+            )
 
             # --- Preference & Fit Badges ---
             badge_chips = [
@@ -58,6 +84,11 @@ def build_results_view(
                 )
             else:
                 for hei in heis:
+                    tuition_label = (
+                        "Tuition-free (RA 10931)"
+                        if not hei.get("requires_tuition", True)
+                        else "Tuition required"
+                    )
                     scholarship_tag = " • Scholarships available" if hei.get("scholarships") else ""
                     hei_items.append(
                         ft.Container(
@@ -74,7 +105,7 @@ def build_results_view(
                                         size=13,
                                     ),
                                     ft.Text(
-                                        f"Type: {hei.get('type', 'N/A')}{scholarship_tag}",
+                                        f"{hei.get('type', 'N/A')} • {tuition_label}{scholarship_tag}",
                                         size=11,
                                         color=ft.Colors.BLUE_GREY_700,
                                     ),
@@ -96,11 +127,22 @@ def build_results_view(
                         alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
                         vertical_alignment=ft.CrossAxisAlignment.START,
                         controls=[
-                            ft.Text(
-                                f"#{idx}  {program.get('name', 'Program')}",
-                                size=16,
-                                weight=ft.FontWeight.BOLD,
+                            ft.Column(
+                                spacing=2,
                                 expand=True,
+                                controls=[
+                                    ft.Text(
+                                        f"#{idx}  {program.get('name', 'Program')}",
+                                        size=16,
+                                        weight=ft.FontWeight.BOLD,
+                                    ),
+                                    ft.Text(
+                                        f"Field: {college.get('name', 'General')}",
+                                        size=12,
+                                        weight=ft.FontWeight.W_600,
+                                        color=ft.Colors.BLUE_800,
+                                    ),
+                                ],
                             ),
                             ft.Container(
                                 padding=ft.Padding.symmetric(horizontal=10, vertical=4),
@@ -122,6 +164,7 @@ def build_results_view(
                         color=ft.Colors.BLUE_700,
                         bgcolor=ft.Colors.BLUE_100,
                     ),
+                    ft.Text(basis_caption, size=11, color=ft.Colors.GREY_600),
                     ft.Row(wrap=True, spacing=6, controls=badge_chips) if badge_chips else ft.Container(),
                     ft.Text(rationale, size=13),
                     ft.Divider(height=6),

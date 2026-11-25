@@ -1,6 +1,6 @@
-"""Layer 1 18-item questionnaire definitions (Interest, Ability, Subject Preference)."""
+"""Layer 2 (18-item Trait Assessment) and Layer 3 (Adaptive Skill Prompt) definitions."""
 
-LAYER1_QUESTIONS: dict[str, list[dict[str, str]]] = {
+LAYER2_TRAIT_QUESTIONS: dict[str, list[dict[str, str]]] = {
     "analytical": [
         {
             "id": "AN-1",
@@ -104,3 +104,22 @@ LAYER1_QUESTIONS: dict[str, list[dict[str, str]]] = {
         },
     ],
 }
+
+# Backward-compatible alias
+LAYER1_QUESTIONS = LAYER2_TRAIT_QUESTIONS
+
+# Optional SHS-friendly prompt overrides for Layer 3 skills (falls back to skills.json hint)
+LAYER3_SKILL_PROMPTS: dict[str, str] = {
+    "sk_code": "I enjoy learning to write, test, and fix computer code.",
+    "sk_imaging": "I'm interested in operating X-ray, ultrasound, or medical scan equipment.",
+    "sk_techvoc": "I want to teach practical trade or technical skills to others.",
+    "sk_communitymedia": "I'm interested in using media and campaigns to inform and help local communities.",
+    "sk_casecare": "I like organizing welfare support and services for individuals or families in need.",
+    "sk_securityops": "I'm interested in security systems, safety planning, and protecting facilities.",
+}
+
+
+def resolve_skill_prompt(skill: dict) -> str:
+    """Return the SHS-refined prompt if defined, otherwise the catalog hint from skills.json."""
+    skill_key = skill.get("key") or skill.get("id", "")
+    return LAYER3_SKILL_PROMPTS.get(skill_key) or skill.get("hint", "")
