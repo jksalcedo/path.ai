@@ -3,15 +3,27 @@ Add JsonDecisionTreeEngine(MatchingEngine) loading an exported model_rules.json 
 from __future__ import annotations
 
 from abc import ABC, abstractmethod
-from typing import List
+from typing import List, Optional
 
 from app.model.dataset_repository import DatasetRepository
-from app.model.entities import TRAIT_INFO, Preferences, Recommendation, TraitProfile
+from app.model.entities import (
+    TRAIT_INFO,
+    Preferences,
+    Recommendation,
+    SkillProfile,
+    TraitProfile,
+)
 
 
 class MatchingEngine(ABC):
     @abstractmethod
-    def recommend(self, traits: TraitProfile, prefs: Preferences, top_n: int = 3) -> List[Recommendation]: ...
+    def recommend(
+        self,
+        traits: TraitProfile,
+        prefs: Preferences,
+        skills: Optional[SkillProfile] = None,
+        top_n: int = 3,
+    ) -> List[Recommendation]: ...
 
 
 class RuleBasedEngine(MatchingEngine):
@@ -29,7 +41,14 @@ class RuleBasedEngine(MatchingEngine):
         labels = " and ".join(TRAIT_INFO[t][0].lower() for t in (strong or ranked[:2]))
         return f"Your {labels} interests line up with the core demands of this program."
 
-    def recommend(self, traits, prefs, skills=None, top_n=3, college_k=3):
+    def recommend(
+        self,
+        traits: TraitProfile,
+        prefs: Preferences,
+        skills: Optional[SkillProfile] = None,
+        top_n: int = 3,
+        college_k: int = 3,
+    ) -> List[Recommendation]:
         ranked = sorted(self._ds.colleges(),
                         key=lambda c: self._fit(traits.values, c.trait_weights), reverse=True)[:college_k]
         cfit = {c.id: self._fit(traits.values, c.trait_weights) for c in ranked}
