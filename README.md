@@ -83,6 +83,17 @@ The recommendation engine will use a manually compiled and labeled dataset of co
 
 Currently under development.
 
+## Running Tests
+
+Install the test dependency and run the test suite:
+
+```bash
+python -m pip install -r requirements-dev.txt
+python -m pytest
+```
+
+GitHub Actions runs pytest for every pull request.
+
 ---
 
 *Path.AI - Helping students find a college path that fits them.*

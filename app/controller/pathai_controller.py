@@ -5,7 +5,7 @@ from __future__ import annotations
 from typing import List, Optional
 
 from app.model.dataset_repository import DatasetRepository
-from app.model.entities import TRAIT_INFO, IntakeAnswers
+from app.model.entities import TRAIT_INFO, IntakeAnswers, SkillProfile
 from app.model.matching_engine import MatchingEngine, RuleBasedEngine
 from app.model.storage_repository import LocalStorageRepository, StorageBackend
 
@@ -49,10 +49,6 @@ class PathAIController:
         self._answers.skills.set(key, value)
         await self._persist()
 
-    async def set_step(self, step: int) -> None:
-        self._answers.step = max(1, min(3, int(step)))
-        await self._persist()
-
     def locations(self) -> List[str]:
         return self._dataset.locations()
 
@@ -91,12 +87,16 @@ class PathAIController:
         await self._persist()
 
     async def set_step(self, step: int) -> None:
-        self._answers.step = max(1, min(2, int(step)))
+        self._answers.step = max(1, min(3, int(step)))
         await self._persist()
 
     async def submit(self) -> List[dict]:
         # Privacy by construction: only traits + preferences reach the engine.
-        recs = self._engine.recommend(self._answers.traits, self._answers.preferences)
+        recs = self._engine.recommend(
+            self._answers.traits,
+            self._answers.preferences,
+            skills=self._answers.skills,
+        )
         payloads = [r.payload() for r in recs]
         await self._storage.save_results(payloads)
         await self._persist()
