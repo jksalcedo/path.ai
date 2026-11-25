@@ -1,4 +1,4 @@
-"""Recommendation results view displaying top-3 program matches and offered HEIs."""
+"""Recommendation results view displaying top-3 degree matches and campus offerings."""
 
 import flet as ft
 
@@ -12,7 +12,7 @@ def build_results_view(
     controls: list[ft.Control] = [
         ft.Text("Top Recommended Programs", size=20, weight=ft.FontWeight.BOLD),
         ft.Text(
-            "Ranked by your academic field fit, program skills, and Camarines Sur preferences.",
+            "Ranked by your academic field fit and Camarines Sur school preferences.",
             size=12,
             color=ft.Colors.GREY_700,
         ),
@@ -26,7 +26,7 @@ def build_results_view(
                 controls=[
                     ft.Icon(ft.Icons.SCIENCE_OUTLINED, size=18, color=ft.Colors.AMBER_800),
                     ft.Text(
-                        "Prototype notice: Program weights use draft rubric data pending expert validation.",
+                        "Prototype notice: Covers 26 Camarines Sur HEIs using draft rubric weights pending expert validation.",
                         size=11,
                         color=ft.Colors.AMBER_900,
                         expand=True,
@@ -53,18 +53,34 @@ def build_results_view(
         )
     else:
         for idx, item in enumerate(results, start=1):
-            program = item.get("program", {})
+            degree = item.get("degree") or item.get("program", {})
             college = item.get("college", {})
             match_pct = int(item.get("match_pct", 0))
             fit_basis = item.get("fit_basis", "traits")
             badges = item.get("badges", [])
             rationale = item.get("rationale", "")
-            heis = item.get("heis", [])
+            offerings = item.get("offerings", [])
 
             basis_caption = (
                 "Based on your skills"
                 if fit_basis == "skills"
                 else "Based on your interests"
+            )
+
+            # --- College Cluster Subtitle Chip ---
+            college_name = college.get("name", "")
+            college_chip = (
+                ft.Chip(
+                    label=ft.Text(
+                        college_name,
+                        size=11,
+                        weight=ft.FontWeight.W_600,
+                        color=ft.Colors.BLUE_900,
+                    ),
+                    bgcolor=ft.Colors.BLUE_50,
+                )
+                if college_name
+                else ft.Container()
             )
 
             # --- Preference & Fit Badges ---
@@ -76,21 +92,53 @@ def build_results_view(
                 for badge in badges
             ]
 
-            # --- Offered At HEIs List ---
-            hei_items: list[ft.Control] = []
-            if not heis:
-                hei_items.append(
-                    ft.Text("No matching institutions listed in the current dataset.", size=12, italic=True)
+            # --- Offered At Campus List (Relational Offerings) ---
+            offering_items: list[ft.Control] = []
+            if not offerings:
+                offering_items.append(
+                    ft.Text("No matching campus offerings listed in the current dataset.", size=12, italic=True)
                 )
             else:
-                for hei in heis:
+                for offering in offerings:
+                    hei = offering.get("hei", {})
+                    hei_name = hei.get("name", "Unknown HEI")
+                    campus = offering.get("campus") or hei.get("municipality", "")
+                    title_line = f"{hei_name} — {campus}" if campus else hei_name
+
+                    hei_type = hei.get("type") or offering.get("type", "N/A")
+                    requires_tuition = offering.get("requires_tuition", hei.get("requires_tuition", True))
+                    scholarships = offering.get("scholarships", hei.get("scholarships", False))
+                    tuition_note = offering.get("tuition_note") or hei.get("tuition_note", "")
+
                     tuition_label = (
                         "Tuition-free (RA 10931)"
-                        if not hei.get("requires_tuition", True)
+                        if not requires_tuition
                         else "Tuition required"
                     )
-                    scholarship_tag = " • Scholarships available" if hei.get("scholarships") else ""
-                    hei_items.append(
+                    scholarship_tag = " • Scholarships available" if scholarships else ""
+
+                    offering_controls: list[ft.Control] = [
+                        ft.Text(
+                            title_line,
+                            weight=ft.FontWeight.W_600,
+                            size=13,
+                        ),
+                        ft.Text(
+                            f"{hei_type} • {tuition_label}{scholarship_tag}",
+                            size=11,
+                            color=ft.Colors.BLUE_GREY_700,
+                        ),
+                    ]
+                    if tuition_note:
+                        offering_controls.append(
+                            ft.Text(
+                                tuition_note,
+                                size=11,
+                                color=ft.Colors.GREY_700,
+                            )
+                        )
+
+                    offering_items.append(
                         ft.Container(
                             padding=8,
                             border_radius=6,
@@ -98,28 +146,12 @@ def build_results_view(
                             border=ft.Border.all(1, ft.Colors.GREY_200),
                             content=ft.Column(
                                 spacing=2,
-                                controls=[
-                                    ft.Text(
-                                        f"{hei.get('name', 'Unknown HEI')} ({hei.get('municipality', '')})",
-                                        weight=ft.FontWeight.W_600,
-                                        size=13,
-                                    ),
-                                    ft.Text(
-                                        f"{hei.get('type', 'N/A')} • {tuition_label}{scholarship_tag}",
-                                        size=11,
-                                        color=ft.Colors.BLUE_GREY_700,
-                                    ),
-                                    ft.Text(
-                                        hei.get("tuition_note", ""),
-                                        size=11,
-                                        color=ft.Colors.GREY_700,
-                                    ),
-                                ],
+                                controls=offering_controls,
                             ),
                         )
                     )
 
-            # --- Program Recommendation Card ---
+            # --- Degree Recommendation Card ---
             card_content = ft.Column(
                 spacing=10,
                 controls=[
@@ -128,20 +160,15 @@ def build_results_view(
                         vertical_alignment=ft.CrossAxisAlignment.START,
                         controls=[
                             ft.Column(
-                                spacing=2,
+                                spacing=4,
                                 expand=True,
                                 controls=[
                                     ft.Text(
-                                        f"#{idx}  {program.get('name', 'Program')}",
+                                        f"#{idx}  {degree.get('name', 'Program')}",
                                         size=16,
                                         weight=ft.FontWeight.BOLD,
                                     ),
-                                    ft.Text(
-                                        f"Field: {college.get('name', 'General')}",
-                                        size=12,
-                                        weight=ft.FontWeight.W_600,
-                                        color=ft.Colors.BLUE_800,
-                                    ),
+                                    college_chip,
                                 ],
                             ),
                             ft.Container(
@@ -169,7 +196,7 @@ def build_results_view(
                     ft.Text(rationale, size=13),
                     ft.Divider(height=6),
                     ft.Text("Offered at:", weight=ft.FontWeight.W_600, size=13),
-                    ft.Column(spacing=6, controls=hei_items),
+                    ft.Column(spacing=6, controls=offering_items),
                 ],
             )
 

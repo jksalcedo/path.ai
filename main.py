@@ -33,7 +33,7 @@ async def main(page: ft.Page):
             ft.SafeArea(
                 expand=True,
                 content=ft.Container(
-                    padding=16,
+                    padding=18,
                     expand=True,
                     content=view,
                 ),
