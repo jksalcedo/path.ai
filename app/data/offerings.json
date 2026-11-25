@@ -1,0 +1,1705 @@
+{
+  "status": "340 Campus-level offerings",
+  "offerings": [
+    {
+      "hei_id": "parsu",
+      "degree_id": "BEED",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSED",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSACCT",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSBA",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSOA",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSENTREP",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSECON",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSCE",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSSE",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSCS",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSMATH",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSIT",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BAUTOTECH",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BET",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "ABCOMM",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BPA",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSBIO",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSGEOL",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BAUTOTECH",
+      "campus": "Caramoan"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSHM",
+      "campus": "Caramoan"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSBIO",
+      "campus": "Caramoan"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSTM",
+      "campus": "Caramoan"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BET",
+      "campus": "Caramoan"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSND",
+      "campus": "Lagonoy"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSCRIM",
+      "campus": "Lagonoy"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSISM",
+      "campus": "Lagonoy"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSFISH",
+      "campus": "Sagnay"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSMARBIO",
+      "campus": "Sagnay"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSAB",
+      "campus": "Salogon"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSCD",
+      "campus": "Salogon"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSHM",
+      "campus": "San Jose"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSTM",
+      "campus": "San Jose"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSES",
+      "campus": "Tinambac"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSEP",
+      "campus": "Tinambac"
+    },
+    {
+      "hei_id": "parsu",
+      "degree_id": "BSFOR",
+      "campus": "Tinambac"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSBIO",
+      "campus": "Pili"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSES",
+      "campus": "Pili"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BEED",
+      "campus": "Pili"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSED",
+      "campus": "Pili"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BTVTED",
+      "campus": "Pili"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSAGRI",
+      "campus": "Pili"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSAF",
+      "campus": "Pili"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BAGRITECH",
+      "campus": "Pili"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSAB",
+      "campus": "Pili"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSTM",
+      "campus": "Pili"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSABE",
+      "campus": "Pili"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSFT",
+      "campus": "Pili"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "ABELS",
+      "campus": "Calabanga"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSMATH",
+      "campus": "Calabanga"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSFISH",
+      "campus": "Calabanga"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSES",
+      "campus": "Calabanga"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSINDTECH",
+      "campus": "Calabanga"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSHM",
+      "campus": "Calabanga"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BEED",
+      "campus": "Calabanga"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSED",
+      "campus": "Calabanga"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BTLED",
+      "campus": "Calabanga"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSINDTECH",
+      "campus": "Sipocot"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BET",
+      "campus": "Sipocot"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSEE",
+      "campus": "Sipocot"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSECE",
+      "campus": "Sipocot"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSME",
+      "campus": "Sipocot"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSCRIM",
+      "campus": "Sipocot"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSES",
+      "campus": "Sipocot"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSAF",
+      "campus": "Sipocot"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BEED",
+      "campus": "Sipocot"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSED",
+      "campus": "Sipocot"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BTLED",
+      "campus": "Sipocot"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSIT",
+      "campus": "Sipocot"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BEED",
+      "campus": "Pasacao"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSED",
+      "campus": "Pasacao"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSES",
+      "campus": "Pasacao"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSMARBIO",
+      "campus": "Pasacao"
+    },
+    {
+      "hei_id": "cbsua",
+      "degree_id": "BSTM",
+      "campus": "Pasacao"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSN",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSMID",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BHS",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "ABELS",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSDEVCOM",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BPA",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSMATH",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSAM",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSIT",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSCS",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BLIS",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSIS",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BTVTED",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSNED",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BPED",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BCAED",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSCE",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSEE",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSECE",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSME",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSARCH",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSCPE",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSOA",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSHM",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSENTREP",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSTM",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSBA",
+      "campus": "Nabua"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BSOA",
+      "campus": "Buhi"
+    },
+    {
+      "hei_id": "cspc",
+      "degree_id": "BECED",
+      "campus": "Buhi"
+    },
+    {
+      "hei_id": "biscast",
+      "degree_id": "BSEMC",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "biscast",
+      "degree_id": "BSCE",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "biscast",
+      "degree_id": "BSEE",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "biscast",
+      "degree_id": "BSECE",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "biscast",
+      "degree_id": "BSME",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "biscast",
+      "degree_id": "BSARCH",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "biscast",
+      "degree_id": "BET",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "biscast",
+      "degree_id": "BSINDTECH",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "biscast",
+      "degree_id": "BDT",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "biscast",
+      "degree_id": "BSFT",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "biscast",
+      "degree_id": "BSESS",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "biscast",
+      "degree_id": "BSENTREP",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "biscast",
+      "degree_id": "BEED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "biscast",
+      "degree_id": "BSED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "biscast",
+      "degree_id": "BPED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "biscast",
+      "degree_id": "BTVTED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "biscast",
+      "degree_id": "BTLED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "rsc",
+      "degree_id": "BSIS",
+      "campus": "Baao"
+    },
+    {
+      "hei_id": "rsc",
+      "degree_id": "BET",
+      "campus": "Baao"
+    },
+    {
+      "hei_id": "rsc",
+      "degree_id": "BSINDTECH",
+      "campus": "Baao"
+    },
+    {
+      "hei_id": "rsc",
+      "degree_id": "BEED",
+      "campus": "Baao"
+    },
+    {
+      "hei_id": "rsc",
+      "degree_id": "BSED",
+      "campus": "Baao"
+    },
+    {
+      "hei_id": "rsc",
+      "degree_id": "BPED",
+      "campus": "Baao"
+    },
+    {
+      "hei_id": "pupragay",
+      "degree_id": "BSED",
+      "campus": "Ragay"
+    },
+    {
+      "hei_id": "pupragay",
+      "degree_id": "BEED",
+      "campus": "Ragay"
+    },
+    {
+      "hei_id": "pupragay",
+      "degree_id": "BSIT",
+      "campus": "Ragay"
+    },
+    {
+      "hei_id": "pupragay",
+      "degree_id": "BSOA",
+      "campus": "Ragay"
+    },
+    {
+      "hei_id": "pupragay",
+      "degree_id": "BSBA",
+      "campus": "Ragay"
+    },
+    {
+      "hei_id": "gmvcc",
+      "degree_id": "BTVTED",
+      "campus": "Garchitorena"
+    },
+    {
+      "hei_id": "gmvcc",
+      "degree_id": "BTVTED",
+      "campus": "Siruma"
+    },
+    {
+      "hei_id": "gmvcc",
+      "degree_id": "BSENTREP",
+      "campus": "Siruma"
+    },
+    {
+      "hei_id": "gmvcc",
+      "degree_id": "BSFISH",
+      "campus": "Siruma"
+    },
+    {
+      "hei_id": "calcc",
+      "degree_id": "BSNED",
+      "campus": "Calabanga"
+    },
+    {
+      "hei_id": "calcc",
+      "degree_id": "BSESS",
+      "campus": "Calabanga"
+    },
+    {
+      "hei_id": "calcc",
+      "degree_id": "BSED",
+      "campus": "Calabanga"
+    },
+    {
+      "hei_id": "calcc",
+      "degree_id": "BSENTREP",
+      "campus": "Calabanga"
+    },
+    {
+      "hei_id": "carcc",
+      "degree_id": "BEED",
+      "campus": "Caramoan"
+    },
+    {
+      "hei_id": "carcc",
+      "degree_id": "BSED",
+      "campus": "Caramoan"
+    },
+    {
+      "hei_id": "carcc",
+      "degree_id": "ABPOLSCI",
+      "campus": "Caramoan"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSCS",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSIT",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSIS",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BLIS",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSDIA",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSCE",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSECE",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSCPE",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSARCH",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BET",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSN",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSBIO",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSMATH",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSENVM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSACCT",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSBA",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSENTREP",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSTM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "ABECON",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BEED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BPED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSNED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BECED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "ABCOMM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "ABELS",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "ABPOLSCI",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSPSYCH",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "ABBROADCAST",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "ABJOURNALISM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "ABLIT",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "ABPHIL",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "ABRE",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BSDEVCOM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "adnu",
+      "degree_id": "BIS",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSCS",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSIT",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BLIS",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSCT",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSCE",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSEE",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSECE",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSME",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSCPE",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSARCH",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSID",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSN",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSBIO",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSACCT",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSBA",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSENTREP",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSHM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSTM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BEED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BPED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BCAED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSNED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "ABCOMM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "ABPOLSCI",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "ABPSYCH",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSCRIM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "unc",
+      "degree_id": "BSFS",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "BSN",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "BSMEDTECH",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "BSPT",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "BSRT",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "BSPHARM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "BSMA",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "BSBA",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "BSENTREP",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "BSHM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "BEED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "BSED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "BPED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "BCAED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "BSNED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "ABCOMM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "ABPOLSCI",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "BHS",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "BSSW",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "BSPSYCH",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usi",
+      "degree_id": "BM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BSCS",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BSIT",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BSIS",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BSAIS",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BSCE",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BSCPE",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BSGE",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BSN",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BSMID",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BSMEDTECH",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BSBIO",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BSACCT",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BSBA",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BSENTREP",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BSHM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BSTM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BEED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BSED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BPED",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "ABCOMM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "ABELS",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "ABFIL",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BPA",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "ncf",
+      "degree_id": "BSCRIM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BSCS",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BLIS",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BSAIS",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BSCE",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BSARCH",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BSN",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BSACCT",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BSMA",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BSIA",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BSBA",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BSHM",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BSTM",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BSOA",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BEED",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BSED",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BPED",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BSNED",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BECED",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BTLED",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "ABCOMM",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "ABELS",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "ABPOLSCI",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "ABPSYCH",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BSCRIM",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BSISM",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BSMARIT",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "usant",
+      "degree_id": "BSMARE",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSCE",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSEE",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSECE",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSME",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSGE",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSARCH",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSMARIT",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSMARE",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSN",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSMID",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSACCT",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSCA",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSOA",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSENTREP",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSBA",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSHM",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSTM",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSSW",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "ABCOMM",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "ABELS",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "ABPOLSCI",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BEED",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSED",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BPED",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BTLED",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "unep",
+      "degree_id": "BSCRIM",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "ctc",
+      "degree_id": "BSIT",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "ctc",
+      "degree_id": "BET",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "ctc",
+      "degree_id": "BSBA",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "ctc",
+      "degree_id": "BSOA",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "ctc",
+      "degree_id": "BTVTED",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "ctc",
+      "degree_id": "BTLED",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "ctc",
+      "degree_id": "BSCRIM",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "mpcnaga",
+      "degree_id": "BSHM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "mpcnaga",
+      "degree_id": "BSTM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "mpcnaga",
+      "degree_id": "BSCA",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "mpcnaga",
+      "degree_id": "BSBA",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "mpcfcanaman",
+      "degree_id": "BSMARIT",
+      "campus": "Canaman"
+    },
+    {
+      "hei_id": "mpcfcanaman",
+      "degree_id": "BSMARE",
+      "campus": "Canaman"
+    },
+    {
+      "hei_id": "mpcfcanaman",
+      "degree_id": "BSNAME",
+      "campus": "Canaman"
+    },
+    {
+      "hei_id": "mpcfcanaman",
+      "degree_id": "BSCA",
+      "campus": "Canaman"
+    },
+    {
+      "hei_id": "stinaga",
+      "degree_id": "BSIT",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "stinaga",
+      "degree_id": "BSHM",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "amanaga",
+      "degree_id": "BSCPE",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "amanaga",
+      "degree_id": "BSCS",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "amanaga",
+      "degree_id": "BSIT",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "amanaga",
+      "degree_id": "BSBA",
+      "campus": "Naga"
+    },
+    {
+      "hei_id": "pcci",
+      "degree_id": "BEED",
+      "campus": "Pili"
+    },
+    {
+      "hei_id": "pcci",
+      "degree_id": "BPED",
+      "campus": "Pili"
+    },
+    {
+      "hei_id": "pcci",
+      "degree_id": "BSCRIM",
+      "campus": "Pili"
+    },
+    {
+      "hei_id": "htccs",
+      "degree_id": "BSISM",
+      "campus": "Bato"
+    },
+    {
+      "hei_id": "htccs",
+      "degree_id": "BSCRIM",
+      "campus": "Bato"
+    },
+    {
+      "hei_id": "htccs",
+      "degree_id": "BEED",
+      "campus": "Bato"
+    },
+    {
+      "hei_id": "htccs",
+      "degree_id": "BSED",
+      "campus": "Bato"
+    },
+    {
+      "hei_id": "partido",
+      "degree_id": "BEED",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "partido",
+      "degree_id": "BSED",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "partido",
+      "degree_id": "ABPOLSCI",
+      "campus": "Goa"
+    },
+    {
+      "hei_id": "foasfc",
+      "degree_id": "BEED",
+      "campus": "Sipocot"
+    },
+    {
+      "hei_id": "foasfc",
+      "degree_id": "ABPOLSCI",
+      "campus": "Sipocot"
+    },
+    {
+      "hei_id": "sienatigaon",
+      "degree_id": "BEED",
+      "campus": "Tigaon"
+    },
+    {
+      "hei_id": "sienatigaon",
+      "degree_id": "BSED",
+      "campus": "Tigaon"
+    },
+    {
+      "hei_id": "sienatigaon",
+      "degree_id": "BSBA",
+      "campus": "Tigaon"
+    },
+    {
+      "hei_id": "lcciriga",
+      "degree_id": "BSCS",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "lcciriga",
+      "degree_id": "BSTM",
+      "campus": "Iriga"
+    },
+    {
+      "hei_id": "lcciriga",
+      "degree_id": "BSHM",
+      "campus": "Iriga"
+    }
+  ]
+}

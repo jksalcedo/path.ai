@@ -1,17 +1,239 @@
 {
-  "status": "Compiled from official HEI sources (Nov 2026). requires_tuition=false means tuition is covered for eligible students under RA 10931 (SUCs/state colleges); miscellaneous fees still apply. No tuition amounts are stored (no verified basis). municipality = main campus; multi-campus HEIs noted in tuition_note.",
+  "status": "26 Verified CamSur HEIs (DeepSearch Nov 2026)",
   "heis": [
-    {"id": "cspc", "name": "Camarines Sur Polytechnic Colleges", "municipality": "Nabua", "type": "SUC", "requires_tuition": false, "scholarships": true, "tuition_note": "SUC: free tuition for eligible students (RA 10931); misc. fees vary Campuses: Nabua, Buhi."},
-    {"id": "parsu", "name": "Partido State University", "municipality": "Goa", "type": "SUC", "requires_tuition": false, "scholarships": true, "tuition_note": "SUC: free tuition for eligible students (RA 10931); misc. fees vary Campuses: Goa, Caramoan, Lagonoy, Sagñay, Salogon, San Jose, Tinambac."},
-    {"id": "cbsua", "name": "Central Bicol State University of Agriculture", "municipality": "Pili", "type": "SUC", "requires_tuition": false, "scholarships": true, "tuition_note": "SUC: free tuition for eligible students (RA 10931); misc. fees vary Campuses: Pili, Calabanga, Sipocot, Pasacao."},
-    {"id": "biscast", "name": "Bicol State College of Applied Sciences and Technology", "municipality": "Naga", "type": "SUC", "requires_tuition": false, "scholarships": true, "tuition_note": "SUC: free tuition for eligible students (RA 10931); misc. fees vary"},
-    {"id": "rsc", "name": "Rinconada State College (formerly Baao Community College)", "municipality": "Baao", "type": "SUC", "requires_tuition": false, "scholarships": true, "tuition_note": "State college (RA 12294, s. 2025): free tuition for eligible students (RA 10931); misc. fees vary."},
-    {"id": "adnu", "name": "Ateneo de Naga University", "municipality": "Naga", "type": "Private", "requires_tuition": true, "scholarships": true, "tuition_note": "Tuition required; rates not compiled - verify with AdNU."},
-    {"id": "unc", "name": "University of Nueva Caceres", "municipality": "Naga", "type": "Private", "requires_tuition": true, "scholarships": true, "tuition_note": "Tuition required; rates not compiled - verify with UNC."},
-    {"id": "usi", "name": "Universidad de Sta. Isabel", "municipality": "Naga", "type": "Private", "requires_tuition": true, "scholarships": true, "tuition_note": "Tuition required; rates not compiled - verify with USI."},
-    {"id": "ncf", "name": "Naga College Foundation", "municipality": "Naga", "type": "Private", "requires_tuition": true, "scholarships": true, "tuition_note": "Tuition required; rates not compiled - verify with NCF."},
-    {"id": "usant", "name": "University of Saint Anthony", "municipality": "Iriga", "type": "Private", "requires_tuition": true, "scholarships": true, "tuition_note": "Tuition required; rates not compiled - verify with USANT."},
-    {"id": "ctc", "name": "Ceguera Technological Colleges", "municipality": "Iriga", "type": "Private", "requires_tuition": true, "scholarships": true, "tuition_note": "Tuition required; rates not compiled - verify with CTC."},
-    {"id": "pcci", "name": "Pili Capital College", "municipality": "Pili", "type": "Private", "requires_tuition": true, "scholarships": true, "tuition_note": "Tuition required; rates not compiled - verify with PCCI."}
+    {
+      "id": "parsu",
+      "name": "Partido State University",
+      "municipality": "Goa",
+      "type": "SUC",
+      "requires_tuition": false,
+      "scholarships": true,
+      "tuition_note": "SUC: free tuition for eligible students under RA 10931; misc. fees vary. Campuses: Goa, Caramoan, Lagonoy, Sagnay, Salogon, San Jose, Tinambac."
+    },
+    {
+      "id": "cbsua",
+      "name": "Central Bicol State University of Agriculture",
+      "municipality": "Pili",
+      "type": "SUC",
+      "requires_tuition": false,
+      "scholarships": true,
+      "tuition_note": "SUC: free tuition for eligible students under RA 10931; misc. fees vary. Campuses: Pili, Calabanga, Sipocot, Pasacao."
+    },
+    {
+      "id": "cspc",
+      "name": "Camarines Sur Polytechnic Colleges",
+      "municipality": "Nabua",
+      "type": "SUC",
+      "requires_tuition": false,
+      "scholarships": true,
+      "tuition_note": "SUC: free tuition for eligible students under RA 10931; misc. fees vary. Campuses: Nabua, Buhi."
+    },
+    {
+      "id": "biscast",
+      "name": "Bicol State College of Applied Sciences and Technology",
+      "municipality": "Naga",
+      "type": "SUC",
+      "requires_tuition": false,
+      "scholarships": true,
+      "tuition_note": "SUC: free tuition for eligible students under RA 10931; misc. fees vary."
+    },
+    {
+      "id": "rsc",
+      "name": "Rinconada State College (formerly Baao Community College)",
+      "municipality": "Baao",
+      "type": "SUC",
+      "requires_tuition": false,
+      "scholarships": true,
+      "tuition_note": "State college (RA 12294, s. 2025): free tuition for eligible students under RA 10931; misc. fees vary."
+    },
+    {
+      "id": "pupragay",
+      "name": "Polytechnic University of the Philippines - Ragay Campus",
+      "municipality": "Ragay",
+      "type": "SUC",
+      "requires_tuition": false,
+      "scholarships": true,
+      "tuition_note": "SUC satellite campus: free tuition for eligible students under RA 10931; misc. fees vary."
+    },
+    {
+      "id": "gmvcc",
+      "name": "Governor Mariano E. Villafuerte Community College",
+      "municipality": "Garchitorena",
+      "type": "LUC",
+      "requires_tuition": false,
+      "scholarships": true,
+      "tuition_note": "LUC (provincially managed): free tuition under RA 10931/provincial support; Campuses: Garchitorena, Siruma, Libmanan, Tinambac (only Garchitorena and Siruma program sets verified per campus)."
+    },
+    {
+      "id": "calcc",
+      "name": "Calabanga Community College",
+      "municipality": "Calabanga",
+      "type": "LUC",
+      "requires_tuition": false,
+      "scholarships": true,
+      "tuition_note": "LUC: free tuition for eligible students under RA 10931; misc. fees vary."
+    },
+    {
+      "id": "carcc",
+      "name": "Caramoan Community College",
+      "municipality": "Caramoan",
+      "type": "LUC",
+      "requires_tuition": false,
+      "scholarships": true,
+      "tuition_note": "LUC: free tuition for eligible students under RA 10931; misc. fees vary."
+    },
+    {
+      "id": "adnu",
+      "name": "Ateneo de Naga University",
+      "municipality": "Naga",
+      "type": "Private",
+      "requires_tuition": true,
+      "scholarships": true,
+      "tuition_note": "Private: tuition required; institutional grants and CHED/TES scholarships available - verify with AdNU."
+    },
+    {
+      "id": "unc",
+      "name": "University of Nueva Caceres",
+      "municipality": "Naga",
+      "type": "Private",
+      "requires_tuition": true,
+      "scholarships": true,
+      "tuition_note": "Private: tuition required; institutional grants and CHED/TES scholarships available - verify with UNC."
+    },
+    {
+      "id": "usi",
+      "name": "Universidad de Sta. Isabel",
+      "municipality": "Naga",
+      "type": "Private",
+      "requires_tuition": true,
+      "scholarships": true,
+      "tuition_note": "Private: tuition required; institutional, private foundation, and government/TES scholarships available."
+    },
+    {
+      "id": "ncf",
+      "name": "Naga College Foundation",
+      "municipality": "Naga",
+      "type": "Private",
+      "requires_tuition": true,
+      "scholarships": true,
+      "tuition_note": "Private: tuition required; institutional grants and CHED/TES scholarships available - verify with NCF."
+    },
+    {
+      "id": "usant",
+      "name": "University of Saint Anthony",
+      "municipality": "Iriga",
+      "type": "Private",
+      "requires_tuition": true,
+      "scholarships": true,
+      "tuition_note": "Private: tuition required; student assistantships and external scholarships available - verify with USANT."
+    },
+    {
+      "id": "unep",
+      "name": "University of Northeastern Philippines",
+      "municipality": "Iriga",
+      "type": "Private",
+      "requires_tuition": true,
+      "scholarships": true,
+      "tuition_note": "Private: tuition required; school-sponsored, government, and private scholarships available."
+    },
+    {
+      "id": "ctc",
+      "name": "Ceguera Technological Colleges",
+      "municipality": "Iriga",
+      "type": "Private",
+      "requires_tuition": true,
+      "scholarships": true,
+      "tuition_note": "Private: tuition required; check for institutional and TES scholarships with CTC."
+    },
+    {
+      "id": "mpcnaga",
+      "name": "Mariners' Polytechnic Colleges - Naga",
+      "municipality": "Naga",
+      "type": "Private",
+      "requires_tuition": true,
+      "scholarships": true,
+      "tuition_note": "Private: tuition required; check for scholarships with MPC Naga."
+    },
+    {
+      "id": "mpcfcanaman",
+      "name": "Mariners' Polytechnic Colleges Foundation of Canaman",
+      "municipality": "Canaman",
+      "type": "Private",
+      "requires_tuition": true,
+      "scholarships": true,
+      "tuition_note": "Private: tuition required; check for maritime and institutional scholarships with MPCF Canaman."
+    },
+    {
+      "id": "stinaga",
+      "name": "STI College - Naga",
+      "municipality": "Naga",
+      "type": "Private",
+      "requires_tuition": true,
+      "scholarships": true,
+      "tuition_note": "Private: tuition required; check for STI and CHED scholarships."
+    },
+    {
+      "id": "amanaga",
+      "name": "AMA Computer College - Naga",
+      "municipality": "Naga",
+      "type": "Private",
+      "requires_tuition": true,
+      "scholarships": true,
+      "tuition_note": "Private: tuition required; check for institutional and CHED scholarships."
+    },
+    {
+      "id": "pcci",
+      "name": "Pili Capital College",
+      "municipality": "Pili",
+      "type": "Private",
+      "requires_tuition": true,
+      "scholarships": true,
+      "tuition_note": "Private: tuition required; check for scholarships with PCCI."
+    },
+    {
+      "id": "htccs",
+      "name": "Holy Trinity College of Camarines Sur",
+      "municipality": "Bato",
+      "type": "Private",
+      "requires_tuition": true,
+      "scholarships": true,
+      "tuition_note": "Private: tuition required; check for institutional and CHED/TES scholarships."
+    },
+    {
+      "id": "partido",
+      "name": "Partido College",
+      "municipality": "Goa",
+      "type": "Private",
+      "requires_tuition": true,
+      "scholarships": true,
+      "tuition_note": "Private: tuition required; check for institutional and CHED/TES scholarships."
+    },
+    {
+      "id": "foasfc",
+      "name": "Felix O. Alfelor Sr. Foundation College",
+      "municipality": "Sipocot",
+      "type": "Private",
+      "requires_tuition": true,
+      "scholarships": true,
+      "tuition_note": "Private: tuition required; check for institutional and CHED/TES scholarships."
+    },
+    {
+      "id": "sienatigaon",
+      "name": "Siena College Tigaon",
+      "municipality": "Tigaon",
+      "type": "Private",
+      "requires_tuition": true,
+      "scholarships": true,
+      "tuition_note": "Private: tuition required; academic, alumni, TES, LGU, and 4Ps scholarships available."
+    },
+    {
+      "id": "lcciriga",
+      "name": "La Consolacion College Iriga",
+      "municipality": "Iriga",
+      "type": "Private",
+      "requires_tuition": true,
+      "scholarships": true,
+      "tuition_note": "Private: tuition required; check for Catholic institutional and CHED/TES scholarships."
+    }
   ]
 }

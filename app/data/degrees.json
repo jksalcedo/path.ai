@@ -1,0 +1,992 @@
+{
+  "status": "88 CHED Degrees mapped to 13 clusters",
+  "degrees": [
+    {
+      "id": "BSCS",
+      "name": "BS Computer Science",
+      "college_id": "computing",
+      "trait_weights": {
+        "analytical": 3,
+        "technical": 2,
+        "organizational": 2,
+        "creative": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSIT",
+      "name": "BS Information Technology",
+      "college_id": "computing",
+      "trait_weights": {
+        "analytical": 3,
+        "technical": 2,
+        "organizational": 2,
+        "creative": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSIS",
+      "name": "BS Information Systems",
+      "college_id": "computing",
+      "trait_weights": {
+        "analytical": 3,
+        "technical": 2,
+        "organizational": 2,
+        "creative": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BLIS",
+      "name": "Bachelor of Library and Information Science",
+      "college_id": "computing",
+      "trait_weights": {
+        "analytical": 3,
+        "technical": 2,
+        "organizational": 2,
+        "creative": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSCT",
+      "name": "BS Computer Technology",
+      "college_id": "computing",
+      "trait_weights": {
+        "analytical": 3,
+        "technical": 2,
+        "organizational": 2,
+        "creative": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSEMC",
+      "name": "BS Entertainment and Multimedia Computing",
+      "college_id": "computing",
+      "trait_weights": {
+        "analytical": 3,
+        "technical": 2,
+        "organizational": 2,
+        "creative": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSDIA",
+      "name": "BS Digital Illustration and Animation",
+      "college_id": "computing",
+      "trait_weights": {
+        "analytical": 3,
+        "technical": 2,
+        "organizational": 2,
+        "creative": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSCE",
+      "name": "BS Civil Engineering",
+      "college_id": "engineering",
+      "trait_weights": {
+        "analytical": 3,
+        "technical": 3,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSEE",
+      "name": "BS Electrical Engineering",
+      "college_id": "engineering",
+      "trait_weights": {
+        "analytical": 3,
+        "technical": 3,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSECE",
+      "name": "BS Electronics Engineering",
+      "college_id": "engineering",
+      "trait_weights": {
+        "analytical": 3,
+        "technical": 3,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSME",
+      "name": "BS Mechanical Engineering",
+      "college_id": "engineering",
+      "trait_weights": {
+        "analytical": 3,
+        "technical": 3,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSCPE",
+      "name": "BS Computer Engineering",
+      "college_id": "engineering",
+      "trait_weights": {
+        "analytical": 3,
+        "technical": 3,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSGE",
+      "name": "BS Geodetic Engineering",
+      "college_id": "engineering",
+      "trait_weights": {
+        "analytical": 3,
+        "technical": 3,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSSE",
+      "name": "BS Sanitary Engineering",
+      "college_id": "engineering",
+      "trait_weights": {
+        "analytical": 3,
+        "technical": 3,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSABE",
+      "name": "BS Agricultural and Biosystems Engineering",
+      "college_id": "engineering",
+      "trait_weights": {
+        "analytical": 3,
+        "technical": 3,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSARCH",
+      "name": "BS Architecture",
+      "college_id": "engineering",
+      "trait_weights": {
+        "analytical": 3,
+        "technical": 3,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSID",
+      "name": "BS Interior Design",
+      "college_id": "engineering",
+      "trait_weights": {
+        "analytical": 3,
+        "technical": 3,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BET",
+      "name": "Bachelor of Engineering Technology",
+      "college_id": "trades",
+      "trait_weights": {
+        "technical": 3,
+        "organizational": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BAUTOTECH",
+      "name": "Bachelor of Automotive Technology",
+      "college_id": "trades",
+      "trait_weights": {
+        "technical": 3,
+        "organizational": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSINDTECH",
+      "name": "BS Industrial Technology",
+      "college_id": "trades",
+      "trait_weights": {
+        "technical": 3,
+        "organizational": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BDT",
+      "name": "Bachelor of Drafting Technology",
+      "college_id": "trades",
+      "trait_weights": {
+        "technical": 3,
+        "organizational": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSMARIT",
+      "name": "BS Marine Transportation",
+      "college_id": "maritime",
+      "trait_weights": {
+        "technical": 3,
+        "organizational": 3,
+        "analytical": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSMARE",
+      "name": "BS Marine Engineering",
+      "college_id": "maritime",
+      "trait_weights": {
+        "technical": 3,
+        "organizational": 3,
+        "analytical": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSNAME",
+      "name": "BS Naval Architecture and Marine Engineering",
+      "college_id": "maritime",
+      "trait_weights": {
+        "technical": 3,
+        "organizational": 3,
+        "analytical": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSN",
+      "name": "BS Nursing",
+      "college_id": "health",
+      "trait_weights": {
+        "people": 3,
+        "technical": 2,
+        "organizational": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSMID",
+      "name": "BS Midwifery",
+      "college_id": "health",
+      "trait_weights": {
+        "people": 3,
+        "technical": 2,
+        "organizational": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSMEDTECH",
+      "name": "BS Medical Technology",
+      "college_id": "health",
+      "trait_weights": {
+        "people": 3,
+        "technical": 2,
+        "organizational": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSPT",
+      "name": "BS Physical Therapy",
+      "college_id": "health",
+      "trait_weights": {
+        "people": 3,
+        "technical": 2,
+        "organizational": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSRT",
+      "name": "BS Radiologic Technology",
+      "college_id": "health",
+      "trait_weights": {
+        "people": 3,
+        "technical": 2,
+        "organizational": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSPHARM",
+      "name": "BS Pharmacy",
+      "college_id": "health",
+      "trait_weights": {
+        "people": 3,
+        "technical": 2,
+        "organizational": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSND",
+      "name": "BS Nutrition and Dietetics",
+      "college_id": "health",
+      "trait_weights": {
+        "people": 3,
+        "technical": 2,
+        "organizational": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSAGRI",
+      "name": "BS Agriculture",
+      "college_id": "agriculture",
+      "trait_weights": {
+        "technical": 3,
+        "analytical": 2,
+        "entrepreneurial": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BAGRITECH",
+      "name": "Bachelor of Agricultural Technology",
+      "college_id": "agriculture",
+      "trait_weights": {
+        "technical": 3,
+        "analytical": 2,
+        "entrepreneurial": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSAF",
+      "name": "BS Agroforestry",
+      "college_id": "agriculture",
+      "trait_weights": {
+        "technical": 3,
+        "analytical": 2,
+        "entrepreneurial": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSFISH",
+      "name": "BS Fisheries",
+      "college_id": "agriculture",
+      "trait_weights": {
+        "technical": 3,
+        "analytical": 2,
+        "entrepreneurial": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSFOR",
+      "name": "BS Forestry",
+      "college_id": "agriculture",
+      "trait_weights": {
+        "technical": 3,
+        "analytical": 2,
+        "entrepreneurial": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSFT",
+      "name": "BS Food Technology",
+      "college_id": "agriculture",
+      "trait_weights": {
+        "technical": 3,
+        "analytical": 2,
+        "entrepreneurial": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSACCT",
+      "name": "BS Accountancy",
+      "college_id": "business",
+      "trait_weights": {
+        "entrepreneurial": 3,
+        "organizational": 3,
+        "analytical": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSAIS",
+      "name": "BS Accounting Information Systems",
+      "college_id": "business",
+      "trait_weights": {
+        "entrepreneurial": 3,
+        "organizational": 3,
+        "analytical": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSMA",
+      "name": "BS Management Accounting",
+      "college_id": "business",
+      "trait_weights": {
+        "entrepreneurial": 3,
+        "organizational": 3,
+        "analytical": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSIA",
+      "name": "BS Internal Auditing",
+      "college_id": "business",
+      "trait_weights": {
+        "entrepreneurial": 3,
+        "organizational": 3,
+        "analytical": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSBA",
+      "name": "BS Business Administration",
+      "college_id": "business",
+      "trait_weights": {
+        "entrepreneurial": 3,
+        "organizational": 3,
+        "analytical": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSENTREP",
+      "name": "BS Entrepreneurship",
+      "college_id": "business",
+      "trait_weights": {
+        "entrepreneurial": 3,
+        "organizational": 3,
+        "analytical": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSAB",
+      "name": "BS Agribusiness",
+      "college_id": "business",
+      "trait_weights": {
+        "entrepreneurial": 3,
+        "organizational": 3,
+        "analytical": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSCA",
+      "name": "BS Customs Administration",
+      "college_id": "business",
+      "trait_weights": {
+        "entrepreneurial": 3,
+        "organizational": 3,
+        "analytical": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSHM",
+      "name": "BS Hospitality Management",
+      "college_id": "hospitality",
+      "trait_weights": {
+        "people": 3,
+        "entrepreneurial": 2,
+        "organizational": 2,
+        "creative": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSTM",
+      "name": "BS Tourism Management",
+      "college_id": "hospitality",
+      "trait_weights": {
+        "people": 3,
+        "entrepreneurial": 2,
+        "organizational": 2,
+        "creative": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSOA",
+      "name": "BS Office Administration",
+      "college_id": "business",
+      "trait_weights": {
+        "entrepreneurial": 3,
+        "organizational": 3,
+        "analytical": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSECON",
+      "name": "BS Economics",
+      "college_id": "business",
+      "trait_weights": {
+        "entrepreneurial": 3,
+        "organizational": 3,
+        "analytical": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BEED",
+      "name": "Bachelor of Elementary Education",
+      "college_id": "education",
+      "trait_weights": {
+        "people": 3,
+        "creative": 2,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSED",
+      "name": "Bachelor of Secondary Education",
+      "college_id": "education",
+      "trait_weights": {
+        "people": 3,
+        "creative": 2,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BPED",
+      "name": "Bachelor of Physical Education",
+      "college_id": "education",
+      "trait_weights": {
+        "people": 3,
+        "creative": 2,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSESS",
+      "name": "BS Exercise and Sports Sciences",
+      "college_id": "education",
+      "trait_weights": {
+        "people": 3,
+        "creative": 2,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BCAED",
+      "name": "Bachelor of Culture and Arts Education",
+      "college_id": "education",
+      "trait_weights": {
+        "people": 3,
+        "creative": 2,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSNED",
+      "name": "Bachelor of Special Needs Education",
+      "college_id": "education",
+      "trait_weights": {
+        "people": 3,
+        "creative": 2,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BECED",
+      "name": "Bachelor of Early Childhood Education",
+      "college_id": "education",
+      "trait_weights": {
+        "people": 3,
+        "creative": 2,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BTVTED",
+      "name": "Bachelor of Technical-Vocational Teacher Education",
+      "college_id": "education",
+      "trait_weights": {
+        "people": 3,
+        "creative": 2,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BTLED",
+      "name": "Bachelor of Technology and Livelihood Education",
+      "college_id": "education",
+      "trait_weights": {
+        "people": 3,
+        "creative": 2,
+        "organizational": 2
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSBIO",
+      "name": "BS Biology",
+      "college_id": "sciences",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSMATH",
+      "name": "BS Mathematics",
+      "college_id": "sciences",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSAM",
+      "name": "BS Applied Mathematics",
+      "college_id": "sciences",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSGEOL",
+      "name": "BS Geology",
+      "college_id": "sciences",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSES",
+      "name": "BS Environmental Science",
+      "college_id": "sciences",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSEP",
+      "name": "BS Environmental Planning",
+      "college_id": "sciences",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSENVM",
+      "name": "BS Environmental Management",
+      "college_id": "sciences",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSMARBIO",
+      "name": "BS Marine Biology",
+      "college_id": "sciences",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "ABECON",
+      "name": "AB Economics",
+      "college_id": "artscomm",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "ABCOMM",
+      "name": "AB Communication",
+      "college_id": "artscomm",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "ABELS",
+      "name": "AB English Language Studies",
+      "college_id": "artscomm",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "ABFIL",
+      "name": "AB Filipino",
+      "college_id": "artscomm",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "ABPOLSCI",
+      "name": "AB Political Science",
+      "college_id": "social",
+      "trait_weights": {
+        "people": 3,
+        "organizational": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BPA",
+      "name": "Bachelor of Public Administration",
+      "college_id": "social",
+      "trait_weights": {
+        "people": 3,
+        "organizational": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BHS",
+      "name": "Bachelor in Human Services",
+      "college_id": "social",
+      "trait_weights": {
+        "people": 3,
+        "organizational": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSSW",
+      "name": "BS Social Work",
+      "college_id": "social",
+      "trait_weights": {
+        "people": 3,
+        "organizational": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSPSYCH",
+      "name": "BS Psychology",
+      "college_id": "social",
+      "trait_weights": {
+        "people": 3,
+        "organizational": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "ABPSYCH",
+      "name": "AB Psychology",
+      "college_id": "social",
+      "trait_weights": {
+        "people": 3,
+        "organizational": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "ABBROADCAST",
+      "name": "AB Broadcasting",
+      "college_id": "artscomm",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "ABJOURNALISM",
+      "name": "AB Journalism",
+      "college_id": "artscomm",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "ABLIT",
+      "name": "AB Literature",
+      "college_id": "artscomm",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "ABPHIL",
+      "name": "AB Philosophy",
+      "college_id": "artscomm",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "ABRE",
+      "name": "AB Religious and Values Education",
+      "college_id": "artscomm",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSDEVCOM",
+      "name": "BS Development Communication",
+      "college_id": "artscomm",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BIS",
+      "name": "Bachelor of Interdisciplinary Studies",
+      "college_id": "artscomm",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BM",
+      "name": "Bachelor of Music",
+      "college_id": "artscomm",
+      "trait_weights": {
+        "creative": 3,
+        "people": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSCD",
+      "name": "BS Community Development",
+      "college_id": "social",
+      "trait_weights": {
+        "people": 3,
+        "organizational": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSCRIM",
+      "name": "BS Criminology",
+      "college_id": "safety",
+      "trait_weights": {
+        "organizational": 3,
+        "people": 2,
+        "technical": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSFS",
+      "name": "BS Forensic Science",
+      "college_id": "safety",
+      "trait_weights": {
+        "organizational": 3,
+        "people": 2,
+        "technical": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    },
+    {
+      "id": "BSISM",
+      "name": "BS Industrial Security Management",
+      "college_id": "safety",
+      "trait_weights": {
+        "organizational": 3,
+        "people": 2,
+        "technical": 2,
+        "analytical": 1
+      },
+      "skill_weights": {}
+    }
+  ]
+}
