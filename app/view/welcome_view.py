@@ -90,7 +90,7 @@ async def build_welcome_view(
                 controls=[
                     ft.Icon(ft.Icons.SCIENCE_OUTLINED, size=18, color=ft.Colors.BLUE_GREY_700),
                     ft.Text(
-                        "Prototype notice: Covers 12 Camarines Sur HEIs and 87 programs using draft rubric weights pending expert validation.",
+                        "Prototype notice: Covers 26 Camarines Sur HEIs and 87 programs using draft rubric weights pending expert validation.",
                         size=11,
                         color=ft.Colors.BLUE_GREY_800,
                         expand=True,
